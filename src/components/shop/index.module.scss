@@ -1,0 +1,28 @@
+.button_add{
+    width: 100%;
+}
+.filter{
+    span{
+        padding: 0px 10px;
+    }
+    width: 100%;
+    border: 1px dotted #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    height: 700px;
+    overflow: scroll;
+    margin-bottom: 20px;
+    p{
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+    }
+}
+.Categories{
+        font-weight: 900 !important;
+        font-size: 16px !important;
+}
+.filter_category{
+    height: 260px;
+    overflow: scroll;
+}

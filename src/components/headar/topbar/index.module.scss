@@ -1,0 +1,50 @@
+.logo {
+    width: 100px;
+
+    img {
+        width: 200px;
+    }
+}
+.Login{
+    text-decoration: none;
+    color: rgb(40, 38, 38);
+}
+.user {
+    text-align: right;
+
+    button {
+        margin: 0px;
+    }
+
+    button:hover {
+        background: transparent;
+    }
+
+    input {
+        padding: 10px 2px 5px 10px !important;
+
+    }
+
+    label {
+        font-size: 16px;
+        margin-top: 2px;
+    }
+    div {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+}
+.cart {
+    border: 1px solid #ddd;
+    padding: 4px 10px 7px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #6e6969;
+    span {
+        margin: 2px auto;
+    }
+}
+.svg {
+    margin: 30px 20px;
+    cursor: pointer;
+}

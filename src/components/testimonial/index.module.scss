@@ -1,0 +1,52 @@
+.bigimg {
+    position: relative;
+
+    img {
+        width: 430px;
+        border-radius: 20px;
+    }
+
+    div {
+        position: absolute;
+        bottom: 0px;
+        z-index: 999;
+        background: #6c66647a;
+        padding: 10px;
+        border-radius: 20px;
+        width: 430px;
+        p{
+            color: #fff;
+        }
+
+    }
+}
+.testimonial{
+    border-right:1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+    border-top: 1px dotted #ddd;
+    border-radius: 17px;
+    padding: 10px 10px;
+    img {
+        width: 100px;
+        height: 120px;
+        border-radius: 20px;
+    }
+    h6{
+        font-family: cursive;
+    }
+    h1{
+        padding: 0px 10px;
+        font-size: 45px;
+        font-family: cursive;
+        font-weight: 900;
+    }
+    span{
+        color: #d1c863;
+        font-size: 60px;
+    }
+    p{
+        margin: 0px;
+        padding: 0px;
+    }
+
+}

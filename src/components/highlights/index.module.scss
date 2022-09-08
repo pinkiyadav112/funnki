@@ -1,0 +1,55 @@
+.product{
+    width: 100%;
+    img{
+        width: 280px;
+        height: 351px;
+        border-radius:  5px;
+    }
+}
+.heading{
+    font-family: cursive;
+    
+    h1{
+        font-size: 50px;
+    }
+    span{
+        font-size: 30px;
+    }
+}
+.slider:hover div{
+    display: block;
+}
+.slider{
+    width: 100%;
+    text-align: center;
+   
+    border-radius:  15px;
+   
+div{
+    position: absolute;
+    z-index: 999999;
+    bottom: 0px;
+    background: #f9f7f6;
+    width: 280px;
+    display: none;
+    font-family: cursive;
+
+    
+    
+    h1{
+        font-size: 25px;
+        margin: 0px;
+        padding: 0px;
+    };
+    h5{
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+    p{
+        margin:  10px auto;
+        font-size: 16px;
+        font-family: cursive;
+    }
+}

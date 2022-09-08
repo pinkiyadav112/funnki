@@ -1,0 +1,56 @@
+.winter {
+    width: 100%;
+    background: #f9f7f6
+}
+
+.image_list {
+    width: 100%;
+    display: flex;
+
+    div {
+        text-align: center;
+
+        img {
+            width: 293px;
+            height: 336px;
+            border-radius: 30px 100px;
+            padding: 10px;
+        }
+    }
+}
+
+.first_img {
+    img {
+        margin-top: 120px;
+    }
+}
+
+.secand_img {
+    img {
+        margin-bottom: 80px;
+    }
+}
+
+.winter_heading {
+    padding: 70px;
+    text-align: center;
+
+    h1 {
+        font-size: 65px;
+        font-family: cursive;
+        font-weight: 900;
+
+        span {
+            font-size: 45px;
+        }
+
+        ;
+
+    }
+
+    ;
+
+    p {
+        font-family: cursive;
+    }
+}
