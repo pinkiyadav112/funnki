@@ -10,24 +10,23 @@ import React from "react";
 export default function Highlights() {
     const [highlightsData, setHighlights] = React.useState([])
     const callbackfunction = async () => {
-        const collectionRef = collection(firestore, 'Product')
-        const products = await getDocs(collectionRef)
-        var product = []
+        const collectionRef = collection(firestore, 'Product');
+        const products = await getDocs(collectionRef);
+        var product = [];
         for (var snap of products.docs) {
-            var data = snap.data()
+            var data = snap.data();
             // data.ID = snap.id
-            product.push(data)
+            product.push(data);
         }
-        setHighlights(product)
+        setHighlights(product);
     }
     React.useEffect(() => {
-        callbackfunction()
-    }, [highlightsData])
+        callbackfunction();
+    }, [highlightsData]);
 
     return (
         <>
             <br /> <br /> <br />
-
             <div className={style.product}>
                 <Container>
                     <Row>
@@ -40,10 +39,8 @@ export default function Highlights() {
                             <Link className="shop_btn " to="./shop">View All</Link>
                         </Col>
                     </Row>
-
                     <br />
                 </Container>
-
                 <Swiper
                     slidesPerView={highlightsData.length < 5 ? highlightsData.length : 5}
                     spaceBetween={10}
@@ -92,15 +89,11 @@ export default function Highlights() {
 
                                             <Link className="shop_high" to="/shop">Shop Now</Link>
                                         </div>
-
                                     </div>
                                 </SwiperSlide>
-
                             )
                         })
                     }
-
-
                 </Swiper>
             </div >
         </>
