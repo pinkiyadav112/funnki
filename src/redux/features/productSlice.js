@@ -26,8 +26,10 @@ export const productSlice = createSlice({
             }
             localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
         },
+
         decreaseCart(state, action) {
             const itemIndex = state.cartItems.findIndex(
+                
                 (item) => item._id === action.payload._id
             );
             if (state.cartItems[itemIndex].cartQuantity > 1) {

@@ -20,6 +20,7 @@ export default function Home() {
             <Product />
             <Winter />
             <Highlights />
+            
             <br />
             <BestCollection />
             <br />
