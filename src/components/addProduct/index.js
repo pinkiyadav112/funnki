@@ -87,6 +87,7 @@ export default function AddProduct() {
         product_description: "",
         product_price: "",
         sold_price: "",
+        features:"",
         product_image: null
     });
     const [Errormsg, setErrormsg] = React.useState('');
@@ -145,6 +146,7 @@ export default function AddProduct() {
                             product_description: values.product_description,
                             product_price: values.product_price,
                             sold_price: values.sold_price,
+                            features:values.features,
                             product_image: downloadURL
                         });
                         console.log("Document written with ID: ", docRef.id);
@@ -156,6 +158,7 @@ export default function AddProduct() {
                             product_description: "",
                             product_price: "",
                             sold_price: "",
+                            features:"",
                             product_image: null
                         })
                         document.getElementById('file').value = ''
@@ -214,6 +217,19 @@ export default function AddProduct() {
                                 </Form.Select>
                                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             </Form.Group>
+                            <Form.Group as={Col} md="6" controlId="validationCustom01">
+                                <Form.Label className={style.label}>Home features</Form.Label>   
+                                <Form.Select aria-label="Default select example" required value={values.categories}
+                                    onChange={(e) => setValues((prev) => ({ ...prev, features: e.target.value }))}>
+                                    <option>select</option>
+                                    <option value="slider">In slider</option>
+                                    <option value="trending">In trending</option>
+                                    <option value="highlights">In highlights</option>
+                                    <option value="our best collection">In our best collection</option>
+                                    <option value="winter collection">In winter collection</option>
+                                </Form.Select>
+                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            </Form.Group>
                             <Form.Group as={Col} md="6" controlId="validationCustom02">
                                 <Form.Label className={style.label}>Product description</Form.Label>
                                 <Form.Control
@@ -262,6 +278,7 @@ export default function AddProduct() {
                     </Form>
                 </Row>
             </Container>
+            <br/>
         </>
     )
 }
